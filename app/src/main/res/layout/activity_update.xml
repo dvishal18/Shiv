@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateData">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/side_nav_bar"
+
+        android:layout_alignParentStart="true"
+        android:padding="20dp"
+        android:layout_marginBottom="200dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventImage"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_event_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEventName"
+            android:text="Name"
+            android:layout_below="@+id/eventImage"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvEventName"
+            android:layout_toEndOf="@+id/tvEventName"
+            android:id="@+id/tvEventNameServer"
+            android:layout_marginLeft="20dp"
+            android:text="Put Event Name Here"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEventPlace"
+            android:text="Place"
+            android:layout_below="@+id/tvEventNameServer"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvEventPlace"
+            android:layout_toEndOf="@+id/tvEventName"
+            android:id="@+id/tvEventPlaceServer"
+            android:layout_marginLeft="20dp"
+            android:text="Put Event Place Here"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEventDate"
+            android:text="Date"
+            android:layout_below="@+id/tvEventPlaceServer"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvEventDate"
+            android:layout_toEndOf="@+id/tvEventName"
+            android:id="@+id/tvEventDateServer"
+            android:layout_marginLeft="20dp"
+            android:text="Put Event Name Here"
+
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEventTime"
+            android:text="Time"
+            android:layout_below="@+id/tvEventDateServer"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvEventTimeServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvEventTime"
+            android:layout_alignStart="@+id/tvEventDateServer"
+            android:text="Put Event Place Here"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

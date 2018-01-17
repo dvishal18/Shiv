@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/snackbar_contaner"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vishal.vd.shiv.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"/>
+
+
+    <com.imangazaliev.circlemenu.CircleMenu
+        android:id="@+id/circle_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        app:hintsEnabled="true">
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#2196F3"
+            app:colorPressed="#1E88E5"
+            app:hintText="Events"
+            app:icon="@drawable/ic_event_black_24dp" />
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#4CAF50"
+            app:colorPressed="#43A047"
+            app:hintText="Photo Gallery"
+            app:icon="@drawable/ic_menu_gallery" />
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#cddc39"
+            app:colorPressed="#c0ca33"
+            app:hintText="Video Gallery"
+            app:icon="@drawable/ic_video_library_black_24dp" />
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:hintText="Add Photos"
+            app:icon="@drawable/ic_menu_camera" />
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#9C27B0"
+            app:colorPressed="#8E24AA"
+            app:hintText="History"
+            app:icon="@drawable/ic_laptop_black_24dp" />
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#FF9800"
+            app:colorPressed="#FB8C00"
+            app:hintText="Team"
+            app:icon="@drawable/ic_people_outline_black_24dp" />
+
+    </com.imangazaliev.circlemenu.CircleMenu>
+
+
+</RelativeLayout>

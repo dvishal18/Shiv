@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Wallpapers" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_video_library_black_24dp"
+            android:title="Videos" />
+        <item
+            android:id="@+id/nav_team"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="Team"/>
+        <item
+            android:id="@+id/nav_web"
+            android:icon="@drawable/ic_laptop_black_24dp"
+            android:title="Web Search"/>
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Admin Login"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
